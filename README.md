@@ -41,37 +41,45 @@ This dashboard integrates historical trends, real-time outpatient volume, and pr
 
 ## 🧱 Tech Stack
 
-| Tool          | Purpose                          |
-|---------------|----------------------------------|
-| SQL Server    | Historical data extraction       |
-| ETL Tools     | Data pipeline and transformation |
-| Power BI      | Dashboard development            |
-| DAX           | Forecast logic and metrics       |
+| Tool        | Purpose                          |
+|-------------|----------------------------------|
+| SQL Server  | Historical data extraction       |
+| ETL Tools   | Data pipeline and transformation |
+| Power BI    | Dashboard development            |
+| DAX         | Forecast logic and metrics       |
 
 ---
 
 ## 📈 Workflow Overview
 
-1. **Requirements Gathering** → 2. **Data Mart Construction** → 3. **ETL Workflow Design**  
-4. **Dashboard Development** → 5. **Deployment and Stakeholder Training**
+1. **Requirements Gathering**  
+2. **Data Mart Construction**  
+3. **ETL Workflow Design**  
+4. **Dashboard Development**  
+5. **Deployment and Stakeholder Training**
 
 ---
 
 ## 📊 Dashboard Screenshots
 
-| ![Dashboard01](./image/PharmacyDashboard_01.png) |   
-| ![Dashboard01](./image/PharmacyDashboard_02.png) |   
-| ![Dashboard01](./image/PharmacyDashboard_02.png/) |   
+### 🔹 Forecasted Load Overview
+![Dashboard 01](./images/PharmacyDashboard_01.png)
+
+### 🔹 Historical Prescription Rate & Trend
+![Dashboard 02](./images/PharmacyDashboard_02.png)
+
+### 🔹 Prescription Volume & Distribution Summary
+![Dashboard 03](./images/PharmacyDashboard_03.png)
 
 ---
 
 ## 🧩 KPI Definitions
 
-| Metric                           | Description |
-|----------------------------------|-------------|
-| Prescription Rate                | % of patients who received prescriptions |
-| Today’s Dispensing Prescriptions | Expected # of prescriptions not yet dispensed |
-| Today’s Dispensing Drugs         | Expected # of items in those prescriptions |
+| Metric                           | Description                                           |
+|----------------------------------|-------------------------------------------------------|
+| Prescription Rate                | % of patients who received prescriptions              |
+| Today’s Dispensing Prescriptions | Expected # of prescriptions not yet dispensed         |
+| Today’s Dispensing Drugs         | Expected # of items in those prescriptions            |
 
 ---
 
