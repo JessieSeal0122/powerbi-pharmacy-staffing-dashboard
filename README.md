@@ -16,37 +16,40 @@ This dashboard integrates historical trends, real-time outpatient volume, and pr
 
 - **Historical Trend Analysis**  
   Analyzes prescription and medication counts over the past 30 days to calculate:
-  - Prescription issuance rate
-  - Average number of prescriptions and medication items per visit (by physician/department)
+  - Consultation rate  
+  - Prescription issuance rate  
+  - Average number of medication items per prescription (by physician/department)
 
 - **Real-Time Monitoring**  
-  Displays current outpatient counts and unfinished visits to reflect ongoing demand.
+  Displays the number of patients currently in progress and those waiting to be seen, reflecting up-to-date outpatient demand.
 
 - **Forecasting Engine**  
-  Predicts remaining prescription volume and item count using:
-  - Past 30-day physician-level data
-  - Real-time outpatient queue
-  - Visit-patient matching logic
+  Estimates the number of pending prescriptions and medication items by multiplying:
+  - Each physician’s historical 30-day average:
+    - Consultation rate  
+    - Prescription rate  
+    - Average number of drugs per prescription  
+  - × Real-time number of patients yet to complete consultation
 
 - **Decision Support Dashboard**  
   Visualizes:
-  - Forecasted workload vs. staffing levels
-  - Outlier physicians/departments with high prescription complexity
-  - Department- and branch-specific summaries
+  - Forecasted prescription workload vs. current staffing levels  
+  - Summaries of departments, clinics, or physicians with higher-than-average prescription or medication volume  
+  - Breakdown by time period, branch, weekday, clinic, physician, and department
 
 - **Efficiency Gains**  
-  Enables faster and more accurate staffing adjustments, reducing both idle time and overtime.
+  Enables faster and more accurate pharmacist staffing decisions, reducing idle time and overtime while maintaining service quality.
 
 ---
 
 ## 🧱 Tech Stack
 
-| Tool        | Purpose                          |
-|-------------|----------------------------------|
-| SQL Server  | Historical data extraction       |
-| ETL Tools   | Data pipeline and transformation |
-| Power BI    | Dashboard development            |
-| DAX         | Forecast logic and metrics       |
+| Tool          | Purpose                          |
+|---------------|----------------------------------|
+| SQL Server    | Historical data extraction       |
+| ETL Tools     | Data pipeline and transformation |
+| Power BI      | Dashboard development            |
+| DAX           | Forecast logic and metrics       |
 
 ---
 
@@ -62,28 +65,33 @@ This dashboard integrates historical trends, real-time outpatient volume, and pr
 
 ## 📊 Dashboard Screenshots
 
-### 🔹 Forecasted Load Overview
-![Dashboard 01](./images/PharmacyDashboard_01.png)
+| Real-time + Forecast Dashboard |  
+|:--|  
+| ![](./images/PharmacyDashboard_01.png) |
 
-### 🔹 Historical Prescription Rate & Trend
-![Dashboard 02](./images/PharmacyDashboard_02.png)
+| KPI Breakdown (Branch, Weekday, Time Period) |  
+|:--|  
+| ![](./images/PharmacyDashboard_02.png) |
 
-### 🔹 Prescription Volume & Distribution Summary
-![Dashboard 03](./images/PharmacyDashboard_03.png)
+| Physician- and Clinic-Level Insights |  
+|:--|  
+| ![](./images/PharmacyDashboard_03.png) |
 
 ---
 
 ## 🧩 KPI Definitions
 
-| Metric                           | Description                                           |
-|----------------------------------|-------------------------------------------------------|
-| Prescription Rate                | % of patients who received prescriptions              |
-| Today’s Dispensing Prescriptions | Expected # of prescriptions not yet dispensed         |
-| Today’s Dispensing Drugs         | Expected # of items in those prescriptions            |
+| Metric                           | Description |
+|----------------------------------|-------------|
+| Consultation Rate                | % of registered patients who completed consultation |
+| Prescription Rate                | % of patients who received prescriptions |
+| Avg. Drugs per Prescription      | Average number of drugs prescribed per prescription |
+| Pending Prescriptions Today      | Estimated number of prescriptions to be dispensed |
+| Pending Drugs Today              | Estimated number of drugs to be dispensed |
 
 ---
 
 ## 🔒 Privacy Notes
 
-All data has been anonymized and aggregated before visualization.  
-The system is designed for internal operational improvement and does not contain personally identifiable patient information.
+All visualizations are based on anonymized and aggregated data.  
+The dashboard is intended for internal operational support and contains no personally identifiable patient information.
