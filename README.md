@@ -59,9 +59,9 @@ This dashboard integrates historical trends, real-time outpatient volume, and pr
 
 ## 📊 Dashboard Screenshots
 
-| ![Dashboard01](./images/PharmacyDashboard_01.png) |   
-| ![Dashboard01](./images/PharmacyDashboard_02.png) |   
-| ![Dashboard01](./images/PharmacyDashboard_02.png/) |   
+| ![Dashboard01](./image/PharmacyDashboard_01.png) |   
+| ![Dashboard01](./image/PharmacyDashboard_02.png) |   
+| ![Dashboard01](./image/PharmacyDashboard_02.png/) |   
 
 ---
 
